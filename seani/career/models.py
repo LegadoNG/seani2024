@@ -21,9 +21,9 @@ class Career(models.Model):
         max_length = 20)
     
 
-def __str__(self):
-    return f"{ self.level } - { self.short_name }"
+    def __str__(self):
+        return f"{ self.level } - { self.short_name }"
 
-class Meta:
-    verbose_name = 'carrera'
-    vrbose_name_plural = 'carreras'
+    class Meta:
+        verbose_name = 'carrera'
+        verbose_name_plural = 'carreras'
